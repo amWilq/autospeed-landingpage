@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = ({ toggle }: { toggle: () => void }) => {
   return (
     <>
-      <div className="w-full h-20 bg-emerald-800 sticky top-0">
+      <div className="w-full h-20 top-0" style={{ backgroundColor: '#841404' }}>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
@@ -29,18 +29,19 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             </button>
             <ul className="hidden md:flex gap-x-6 text-white ">
               <li>
-                <Link href="/about">
-                  <p>About Us</p>
+                <Link href="/">
+                  <p>Home Page</p>
+                </Link>
+
+              </li>
+              <li>
+                <Link href="/localization">
+                  <p>Localization</p>
                 </Link>
               </li>
               <li>
-                <Link href="/services">
-                  <p>Services</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contacts">
-                  <p>Contacts</p>
+                <Link href="/contact">
+                  <p>Contact</p>
                 </Link>
               </li>
             </ul>

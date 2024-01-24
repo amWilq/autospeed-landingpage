@@ -35,7 +35,6 @@ const Logo = () => {
 
   return (
     <>
-    
       <Link href="/">
         <Image
           src="/logo.png"
