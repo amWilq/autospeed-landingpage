@@ -273,7 +273,7 @@ export default function Home() {
                 <button className="bg-transparent border border-white text-white px-4 py-2 rounded">WYZNACZ TRASĘ DOJAZDU</button>
               </a>
 
-              <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={() => scrolltoHash(3)}>
+              <button style={{ backgroundColor: '#841404' }} className="text-white px-4 py-2 rounded" onClick={() => scrolltoHash(3)}>
                 LOKALIZACJA
               </button>
             </div>
