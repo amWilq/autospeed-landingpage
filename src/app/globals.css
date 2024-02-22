@@ -74,3 +74,75 @@
     @apply bg-background text-foreground;
   }
 }
+/* 
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 50vh;
+} */
+
+
+
+body {
+  background-color: #131316;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.animate-hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.animate-fadeIn {
+  
+  filter: blur(0);
+opacity: 1;
+transform: translateX(0);
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 80px);
+  left: calc(50% - 20px); 
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent; /* Increase this value to make the arrow wider */
+  border-right: 20px solid transparent; /* Increase this value to make the arrow wider */
+  animation: jumpInfinite 1.5s infinite;
+}
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 6px solid;
+  border-right: 6px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
